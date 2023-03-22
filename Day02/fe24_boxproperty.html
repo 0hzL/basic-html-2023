@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>CSS BOX영역</title>
+    <style>
+        *{
+            margin: 0; padding: 0;
+        }
+        div{
+            width: 100px; height: 100px;
+            background-color: rgba(255, 0, 0, 0.5);
+            border: 5px dashed /*double solid dotted*/ ;
+            border-color: crimson;
+            margin: 10px 0 0 30px;
+            padding: 10px 50px 20px 30px;
+        }
+        p{
+            margin: 20px;
+        }
+        .box{
+            width: 450px;
+            background-color: aliceblue;
+            border-width: 5px;
+            border-color: black;
+            border-style: dashed;
+            border-radius: 15px;
+            display: none; /*화면에서 숨김*/
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>뽀로로</p>
+    </div>
+    <div class="box">
+        <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. </h1>
+    </div>
+</body>
+</html>

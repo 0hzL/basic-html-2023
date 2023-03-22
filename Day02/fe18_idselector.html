@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>ID/CLASS선택자</title>
+    <style>
+        *{
+            margin: 0; padding: 09;
+        }
+        #header{
+            width: 1024px; margin: 0 auto;
+            background-color: aqua;
+        }
+        #wrap{
+            width: 1024px; margin: 0 auto;
+            overflow: hidden;
+        }
+        #aside{
+            width: 200px; float: left;
+            background-color: blue;
+        }
+        #content{
+            width: 824px; float: left;
+            background-color: #00ff00;
+        }
+        .summer {
+            color: aqua;
+        }
+        .title{
+            background-color: aquamarine;
+        }
+        .item{
+            font-size: 20px;
+            font-style: unset;
+        }
+        .bound{
+            width: 800px;
+            /* border-width: 3px;
+            border-style: solid;
+            border-color: #808080; */
+            border: 3px dashed #808080;
+            border-radius: 10px;
+
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <h1> #header 영역</h1>
+    </div>
+    <div id="wrap">
+        <div id="aside">
+            <h2>#aside 영역</h2>
+        </div>
+        <div id="content">
+            <h2>#content 영역</h2>
+        </div>
+    </div>
+    <div>
+        <ul>
+            <li>딸기</li>
+            <li>애플망고</li>
+            <li>바나나</li>
+            <li>사과</li>
+
+        </ul>
+    </div>
+
+    <div>
+        <ul>
+            <li>딸기</li>
+            <li class="summer">애플망고</li>
+            <li>바나나</li>
+            <li class="summer">수박</li>
+        </ul>
+    </div>
+
+    <span id="span1"> 1st span</span>
+    <span id="span2"><h2 class="titles">2nd span</h2></span>
+    <span id="span3">3rd span</span>
+
+    <h1 class="item bound">동해물과 백두산이 마르고 닳도록</h1>
+</body>
+</html>
