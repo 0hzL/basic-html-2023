@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <style>
+        #wrap{
+            display: grid;
+            grid-template-columns: 2fr 1fr 3fr;
+            grid-template-rows: 1fr 2fr; 
+            row-gap: 10px;
+            column-gap: 20px;
+            /* fr은 배율 */
+            /* grid-template-rows: 100px; */
+        }
+        .item{
+            padding: 10px;
+            background-color: #eeeeee;
+
+        }
+        .item:nth-child(2n+1){
+            background-color: #bbbbbb;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <div class="item">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime suscipit distinctio incidunt placeat dolorem nesciunt, ea, vitae officia praesentium sint animi voluptate quaerat sit sunt repellat, voluptates quis porro impedit.
+        </div>
+        <div class="item">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime suscipit distinctio incidunt placeat dolorem nesciunt, ea, vitae officia praesentium sint animi voluptate quaerat sit sunt repellat, voluptates quis porro impedit.
+        </div>
+        <div class="item">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime suscipit distinctio incidunt placeat dolorem nesciunt, ea, vitae officia praesentium sint animi voluptate quaerat sit sunt repellat, voluptates quis porro impedit.
+        </div>
+        <div class="item">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime suscipit distinctio incidunt placeat dolorem nesciunt, ea, vitae officia praesentium sint animi voluptate quaerat sit sunt repellat, voluptates quis porro impedit.
+        </div>
+        <div class="item">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime suscipit distinctio incidunt placeat dolorem nesciunt, ea, vitae officia praesentium sint animi voluptate quaerat sit sunt repellat, voluptates quis porro impedit.
+        </div>
+        <div class="item">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime suscipit distinctio incidunt placeat dolorem nesciunt, ea, vitae officia praesentium sint animi voluptate quaerat sit sunt repellat, voluptates quis porro impedit.
+        </div>
+
+    </div>      
+</body>
+</html>
