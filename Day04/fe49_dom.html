@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+</head>
+<body>
+    <h1>Lorem ipsum dolor sit amet, </h1>
+    <h1>Lorem ipsum dolor sit amet, </h1>    
+
+    <script>
+        //페이지가 렌더링이 완료되고 나면 실행
+        window.onload = function() {
+        //style 변경은 body태그 마지막에 위치해야함
+        //h1을 선택해서 스타일을 바꾸는것 = dom
+        document.querySelector('h1').style.backgroundColor = 'red';
+        document.querySelector('h1').style.color='white';
+        document.querySelector('h1').style.fontStyle = 'Italic';
+
+        var h1style=document.querySelector('h1').style;
+        h1style.backgroundColor='green';
+
+    };
+    </script>
+</body>
+</html>

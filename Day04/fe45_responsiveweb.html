@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>반응형웹 뷰포트</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <style>
+        *{
+             margin: 0; padding: 0;
+        }
+        #menu{
+            width: 260px; float: left;
+        }
+
+        #section{
+            width: 700px; float: right;
+        }
+
+        li{
+            list-style: none;
+        }
+        /* 인쇄할때 글자색 자동으로 됨 백그라운드컬러는 인쇄옵션에서 배경그래픽 선택 */
+        /* 스마트 폰 일 때 */
+        @media screen and (max-width: 450px) and (orientation: portrait ){
+            body{
+                background-color: aqua;
+                width: auto;
+            }
+            
+            #menu{
+                width: auto; float: none;
+            }
+            #section{
+                width: auto;
+                float: none;
+            }
+        }
+        /* 태블릿 일 때 */
+        @media screen and (min-width: 451px) and (max-width:960px)  and (orientation: portrait ){
+            body{
+                background-color: cadetblue;
+            }
+            #menu{
+                width: auto; float: none;
+            }
+            #section{
+                width: auto;
+                float: none;
+            }
+        }
+
+         /* 데스크탑 일 때 */
+        @media screen and (min-width: 961px)  and (orientation: portrait ){
+            body{
+                background-color: darkolivegreen;
+                width: 960px;
+                margin: 0 auto;
+                overflow: hidden;
+            }
+        }
+
+        /* 화면 방향에 따른 색 지정 */
+        @media screen and (orientation: landscape ) {
+            body{
+                background-color: gray;
+            }
+        }
+
+        @media print{
+            h1{
+                color: blue;
+                font-size: 60px;
+            }
+            body{
+                background-color: greenyellow;
+            }
+
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div id="menu">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Product</li>
+
+        </ul>
+    </div>
+    <div id="section">
+    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, aut officia rerum aspernatur corrupti a eius hic animi      minus sint possimus fuga ea iste iusto quidem adipisci eum impedit eveniet!
+         Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, aut officia rerum aspernatur corrupti a eius hic animi minus sint possimus fuga ea iste iusto quidem adipisci eum impedit eveniet!
+        </p>
+    </div>
+</body>
+</html>

@@ -37,11 +37,15 @@ java 개발자 과정  프론트앤드 리포지토리
     - Grid 레이아웃
     - 반응형 웹
     - JavaScript 기초
+    - JQuery
+
+
+4일차 그리드레이아웃 포토갤러리
+
+<img src ="https://raw.githubusercontent.com/0hzL/basic-html-2023/main/Day01/media/gallery02.png" width="300" >
 
 ## 5일차
 - 프론트앤드 학습
-    - JavaScript 마무리
+    - JS / JavaScript 마무리
     - Bootstrap 학습
     - 포트폴리오 웹사이트 만들기
-
-    <img src ="https://raw.githubusercontent.com/0hzL/basic-html-2023/main/Day01/media/gallery02.png" width="300" >
