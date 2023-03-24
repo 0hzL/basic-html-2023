@@ -44,4 +44,4 @@ java 개발자 과정  프론트앤드 리포지토리
     - Bootstrap 학습
     - 포트폴리오 웹사이트 만들기
 
-    <img src ="https://raw.githubusercontent.com/0hzL/basic-html-2023/main/Day01/media/gallery2.png" width="300" >
+    <img src ="https://raw.githubusercontent.com/0hzL/basic-html-2023/main/Day01/media/gallery02.png" width="300" >
