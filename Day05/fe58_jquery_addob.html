@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src="https://code.jquery.com/jquery-3.6.4.slim.min.js" 
+        integrity="sha256-a2yjHM4jnF9f54xUQakjZGaqYs/V1CYvWpoqZzC2/Bw=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(() => {
+            for ( var i = 0; i<10; i++){
+                $('<h1>Create object by JQuery' + i +'</h1>').css({
+                    'background-color' : 'black',
+                    'color': 'red'
+                }).appendTo('body');
+
+                // $('body').append(h1); 도 가능
+            }
+            // $('body').append('<h1>Create object by jQuery</h1>');
+        });
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

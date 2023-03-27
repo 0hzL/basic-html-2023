@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src="https://code.jquery.com/jquery-3.6.4.slim.min.js" 
+    integrity="sha256-a2yjHM4jnF9f54xUQakjZGaqYs/V1CYvWpoqZzC2/Bw=" crossorigin="anonymous"></script>
+    </script>
+    <script>
+     $(document).ready(function () {
+        var count = 0;
+        var appendDoc = function () {
+            for ( var i=0 ; i<20 ; i++){
+                $('<h1>무스' + count + '</h1>').css({
+                    'background-color' : 'rgb(' + count%255 + ',' + count%255 + ',' + count%255 + ')',
+                    'color' : 'white'
+               }).appendTo('body');
+                count ++;
+            }
+        }
+
+        appendDoc();
+
+        $(window).scroll(function () {
+            var scrollH = $(window).scrollTop() + $(window).height();
+            var docH = $(document).height();
+            
+        if(scrollH >= docH -10) { //docH에서 10정도 뺀 값과 비교를 하지 않으면 스크롤이 멈춤(근데 나는 ==으로햇더니 무한함)
+            appendDoc();
+            }
+        });
+    });
+</script>
+</head>
+<body>
+    
+</body>
+</html>

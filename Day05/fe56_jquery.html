@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>js/jquery 연동</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script>
+        window.onload = function(){ //현재jquery를 안쓰고 전통적인 방법으로 써봤던거임
+            
+            var jumin1 = document.getElementById('jumin1'); //input객체를 가져옴    //확인용으로 쳤음
+            var jumin2 = document.getElementById('jumin2'); //확인용으로 쳤음
+            
+            jumin1.onkeydown = function() { //키보드 입력마다 이벤트 발생
+                console.log(jumin1.value.length);
+                if(6 <= jumin1.value.length) { //여섯자리 이상이 되면 
+                    jumin2.focus(); //주민번호 뒷자리 입력창으로 포커스 이동
+                }
+            };
+
+            jumin2.onkeydown = function(e) {
+                var event = e || window.event;
+                if(event.keyCode == 8 && jumin2.value.length == 0){ // jumin2에서 백스페이스(keyCode 8번), jumin2값을 다 지웠으면
+                    jumin1.focus(); // 주민번호 앞자리 입력창으로 포커스이동
+                }
+            }
+
+            jumin1.focus(); // 완전 처음엔 jumin1에 포커스 주기 (마지막에 넣어야 먹힘 처음에 넣으면 안먹힘)
+        };
+    </script>
+</head>
+<body>
+    <form action="">    <!--input이 들어가면 무조건 form이 들어감 -->
+        <input type="text" maxlength="6" id="jumin1">   <!--maxlength 값보다 크면 절대 안들어감 (주소에는 절대 넣지 말 것)-->
+        <span>-</span>
+        <input type="password" maxlength="7" id="jumin2">
+    </form>
+</body>
+</html>
