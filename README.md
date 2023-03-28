@@ -55,5 +55,9 @@ java 개발자 과정  프론트앤드 리포지토리
 ## 6일차
 - 프론트엔드 학습
     - BootStrap Album example 마무리
+
+    <img src ="https://raw.githubusercontent.com/0hzL/basic-html-2023/main/Day01/media/album.png" width="300" >
+
+
     - 포트폴리오 웹사이트 만들기
    
