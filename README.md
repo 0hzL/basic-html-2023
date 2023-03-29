@@ -55,9 +55,38 @@ java 개발자 과정  프론트앤드 리포지토리
 ## 6일차
 - 프론트엔드 학습
     - BootStrap Album example 마무리
+     - 핀터레스트 스타일 웹페이지 클로닝
+
+6일차 Bootstrap 웹 클로닝
 
     <img src ="https://raw.githubusercontent.com/0hzL/basic-html-2023/main/Day01/media/album.png" width="300" >
 
 
-    - 포트폴리오 웹사이트 만들기
-   
+
+## 7일차
+- 프론트엔드 학습
+    - 핀터레스트 스타일 웹페이지 마무리
+    - BootStrap 5.3.0
+    - jqeury 3.6.4
+    - masonry layout library
+    - ImgLoaded library
+    - Lightbox 구현
+
+- Parallax Scrolling Web 
+- Single Page Templete
+    - Bootstrap
+
+    
+  7일차 핀터레스트 스타일 클로닝
+
+<img src ="https://raw.githubusercontent.com/0hzL/basic-html-2023/main/Day01/media/portfolio1.png" width="700" >
+
+Parallax Scrolling Web
+
+<img src ="https://raw.githubusercontent.com/0hzL/basic-html-2023/main/Day01/media/portfolio2.png" width="700" >
+
+
+## 8일차 
+- 프론트엔드 학습
+    - Single Page Template
+    - SB Admin Page
