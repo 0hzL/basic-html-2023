@@ -90,3 +90,6 @@ Parallax Scrolling Web
 - 프론트엔드 학습
     - Single Page Template
     - SB Admin Page
+
+Grayscale Single Page Template
+<img src ="https://raw.githubusercontent.com/0hzL/basic-html-2023/main/Day01/media/portfolio3.gif" width="700" >
