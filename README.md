@@ -110,7 +110,7 @@ SB Admin Page 중간단계
         - [simple-datatables.js](https://github.com/fiduswriter/simple-datatables)
 
 SB Admin Page 마무리
-<img src ="https://raw.githubusercontent.com/0hzL/basic-html-2023/main/Day01/media/portfolio5.png" width="700" >
+<img src ="https://raw.githubusercontent.com/0hzL/basic-html-2023/main/Day01/media/portfolio5.gif" width="700" >
 
 
 ## 11일차
