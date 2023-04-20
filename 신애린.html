@@ -45,6 +45,9 @@
 
         }
 
+        #all{
+            width: 100%;
+        }
         .container .row .article {
             background-color: rgba(0, 0, 0, 0.8);
             color: white;
@@ -74,8 +77,8 @@
     
 </head>
 
-<body style="margin-top: 15rem; margin-left: 10rem; margin-right: 10rem;">
-    <div class="bg-light">
+<body>
+    <div class="position-absolute top-50 start-50 translate-middle px-5" id="all">
 
         <!-- header 영역 -->
         <header>
@@ -94,13 +97,13 @@
         </header>
         
          <!-- container 영역 -->
-         <div class="container">
+         <div class="container px-0 ">
             <div class="row">
                 <div class="article col-sm-9" style="border: 1px solid black; padding-left: 1.5rem;">
                     <p class="pt-5 mb-2 " style=" font-size: 20px; font-weight: bold;">섹션 1</p>
                     <p style="margin-bottom: 10px; font-size: 15px;">섹션내용입니다.</p>
                 </div>
-                <div class="aside col-sm-3" style="border: 1px solid black">
+                <div class="aside col-sm-3 " style="border: 1px solid black">
                     <p class="pt-4 px-3" style="font-size: 15px;">베너영역</p>
                 </div>
             </div>
