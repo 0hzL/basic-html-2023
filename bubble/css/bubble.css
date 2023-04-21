@@ -3,3 +3,103 @@
 /* 구글폰트로 웹사이트 폰트 바꾸기 */
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@200;300;400;500;600;700;900&display=swap");
 
+*{
+    box-sizing: border-box;
+    font-family: 'Ubuntu',sans-serif;
+}
+
+html{
+    scroll-padding-top: calc(4.5rem -1px);
+}
+
+body{
+    background-color: #E6F3FF;
+    /* background-color: white; */
+    letter-spacing: 0.063em;
+    overflow-x:auto;
+}
+
+header {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    padding: 40px 40px;
+    display: flex;
+    justify-content: space-evenly;
+    /* justify-content: space-around; */
+    align-items: center;
+    z-index: 100;
+    background-color: blue;
+}
+
+.navigation a{
+   text-decoration: none;
+   color:white;
+   background-color: gray;
+   padding: 40px 50px;
+   border-radius: 50%;
+   margin: 0 100px; 
+   font-size: calc(1.3rem + 0.9vw);
+}
+
+.navigation a:hover{
+    background-color:white;
+    color : gray;
+}
+
+.bubblebumul {
+    margin-top: 5%;
+}
+
+.bubblebumul #arrow{
+    width: 5rem;
+    margin-top: 70%;
+    margin-left: 40%;
+}
+
+.bubblebumul img{
+    position:absolute;    
+}
+
+.bubblebumul #back{
+    width: 77%;
+    position: relative;
+}
+
+.navigation img{
+    width: 6rem;
+
+}
+
+
+hr{
+    margin: 1rem 0;
+    color: inherit;
+    border: 0;
+    border-top: 5px solid;
+    opacity: 1;
+}
+
+h2 {
+    margin-top: 0.3rem;
+    margin-bottom: 0.3rem;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+.bubblebumul{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#text{
+    position: absolute;
+    font-size: 7rem;
+}
+
+.container{
+    padding-left: 12rem;
+}
