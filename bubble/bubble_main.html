@@ -36,33 +36,38 @@
 <!-- 헤더 영역 -->
 <header>
     <!-- Navigation-->
-    <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
+    <nav class="navbar navbar-expand-lg bg-light text-uppercase fixed-top" id="mainNav">
         <div class="container">
-            <a class="navbar-brand" href="#page-top">bubble BuMUl</a>
+            <a class="navbar-brand" href="bubble_main.html">bubble BuMUl</a>
             <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 Menu
                 <i class="fas fa-bars"></i>
             </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#reserve">reservation</a></li>
-                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#mypage">mypage</a></li>
-                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#join">join</a></li>
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="bubble_reserve.html">reservation</a></li>
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="bubble_mypage.html">mypage</a></li>
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="bubble_join.html">join</a></li>
                 </ul>
             </div>
         </div>
     </nav>
+</header>
 <body>
-    <div class="main mt-5">
+    <div class="main">
         <!-- 메인 영역 -->
-        <section class="page-top">
-            <img src="images/back.png" id="back">
-            <img src="images/tshirt.gif" id="tshirt">
-            <h2 id="text">BUBBLE<br />
-                <hr />BUMUL
-                <img src="images/arrow.png" id="arrow" href="#reserve"> 
-            </h2>
-        </section>
+        <div class="container">
+            <div class="container tshirt">
+                <img src="images/tshirt.gif">
+            </div>
+            <div class="container bb">
+                    <h2 id="text">BUBBLE<br /><hr />BUMUL</h2>
+            </div>
+            <div class="container">
+                <a href="#reserve"><img src="images/arrow.png" id="arrow"></a>
+            </div>
+        </div>
+    
 
         <!-- 기능 소개 -->
         <div class="container">
@@ -182,9 +187,9 @@
     </div>
 
 </body>
-<!-- 푸터 영역 -->
-<footer>
-
+<!-- footer -->
+<footer class="footer bg-light small text-center">
+    <div class="container px-4">Copyright &copy; Single Page Website 2023.</div>
 </footer>
 
 </html>

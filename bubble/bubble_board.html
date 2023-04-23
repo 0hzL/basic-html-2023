@@ -30,29 +30,22 @@
 
 <!-- 헤더 영역 -->
 <header>
-    <div id="logo">
-        <a href="bubble_main.html">
-            <h1>@@@게시판@@@</h1>
-        </a>
-    </div>
-    <nav>
-        <ul id="topMenu">
-            <li>
-                <a href="#">홈</a>
-            </li>
-            <li>
-                <a href="bubble_board.html">게시판</a>
-            </li>
-            <li>
-                <a href="bubble_reserve.html">예약</a>
-            </li>
-            <li>
-                <a href="bubble_mypage.html">마이페이지</a>
-            </li>
-            <li>
-                <a href="bubble_join.html">로그인</a>
-            </li>
-        </ul>
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg bg-light text-uppercase fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="bubble_main.html">bubble BuMUl</a>
+            <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                Menu
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="bubble_reserve.html">reservation</a></li>
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="bubble_mypage.html">mypage</a></li>
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="bubble_join.html">join</a></li>
+                </ul>
+            </div>
+        </div>
     </nav>
 </header>
 <body>
@@ -63,8 +56,8 @@
     </div>
     
 </body>
-<!-- 푸터 영역 -->
-<footer>
-
+<!-- footer -->
+<footer class="footer bg-light small text-center mt-5">
+    <div class="container px-4">Copyright &copy; Single Page Website 2023.</div>
 </footer>
 </html>
