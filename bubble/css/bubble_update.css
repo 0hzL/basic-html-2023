@@ -1,0 +1,150 @@
+@charset "UTF-8";
+
+/* 구글폰트로 웹사이트 폰트 바꾸기 */
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@200;300;400;500;600;700;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap');
+
+*{
+    box-sizing: border-box;
+    font-family: 'Ubuntu',sans-serif;
+}
+
+
+
+html{
+  
+        scroll-behavior: smooth;
+}
+
+body{
+    background-color: #E6F3FF;
+    /* background-color: white; */
+    letter-spacing: 0.063em;
+    overflow-x:auto;
+
+}
+
+html, body{
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+header{
+    height: 60px;
+}
+
+body{
+    height: 100%;
+}
+footer {
+    height: 250px;
+    width: 100%;
+    padding: 0 25px;
+    line-height: 60px;
+    color: #8a8c8f;
+    border-top: 1px solid #dee5e7;
+    background-color: rgba(0, 0, 0, 0.2);
+    bottom: 0;
+    margin-top: auto;
+  }
+
+.navigation a{
+    text-decoration: none;
+    color:white;
+    background-color:  rgba(0, 0, 0, 0.2);
+    padding: 40px 50px;
+    border-radius: 50%;
+    margin: 0 100px; 
+    font-size: calc(1.3rem + 0.9vw);
+ }
+ 
+ .navigation a:hover{
+     background-color:white;
+     color :  rgba(0, 0, 0, 0.2);
+ }
+
+.tshirt{
+    position: relative;
+    left:300px;
+    top: 150px;
+}
+
+.mypage{
+  margin-top: 30px;
+}
+
+.mypage input[type="email"]{
+  width: 30%;
+}
+
+table{
+  margin-top: 30px;
+  margin-bottom: 60px;
+}
+
+
+#caddress1{
+  margin-left: 100px;
+}
+
+#caddress2{
+  margin-left: 10px;
+}
+
+.bb{
+    position: absolute;
+    top:300px;
+    left:700px;
+}
+
+#arrow{
+    position: absolute;
+    left:900px;
+    width: 5rem;
+   
+}
+
+
+
+section{
+    margin-top: 300px;
+}
+
+hr{
+    margin: 1rem 0;
+    color: inherit;
+    border: 0;
+    border-top: 5px solid;
+    opacity: 1;
+}
+
+h2 {
+    margin-top: 0.3rem;
+    margin-bottom: 0.3rem;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+
+td{
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+  border-top: none;
+}
+
+#text{
+    position: absolute;
+    font-size: 7rem;
+}
+
+
+
+
+.reserve{
+    background-color: white;
+}
+
+.body{
+  margin-top: 100px; 
+}

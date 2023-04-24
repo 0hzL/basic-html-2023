@@ -16,7 +16,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!--3. BootStrap Icon / font-awesome 아이콘용 CDN-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel='stylesheet' type='text/css' media='screen' href='css/bubble_mypage.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/bubble.css'>
     <link rel='icon' href="">
 
     <!--jQuery 추가-->
@@ -43,15 +43,27 @@
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="bubble_reserve.html">reservation</a></li>
                     <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="bubble_mypage.html">mypage</a></li>
-                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="bubble_clogin.html">join</a></li>
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="bubble_join.html">join</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 </header>
-<body>
+<body id="body">
     <div class="container">
-      
+
+        <input class="form-control" type="text" id="cid" placeholder="아이디 입력" />
+        <input class="form-control" type="password" id="cpw" placeholder="비밀번호 입력" />
+        <input class="form-control" type="password" id="cpwcheck" placeholder="비밀번호 확인" />
+        <input class="form-control" type="email" id="cemail" placeholder="이메일 입력"/>
+        <input class="form-control" type="text" id="cname" placeholder="이름 입력"/>
+        <input class="form-control" type="text" id="cphone" placeholder="전화번호 입력" />
+        <input class="form-control" type="text" id="caddress-postcode" readonly />
+        <input class="form-control" type="text" id="caddress1" readonly />
+        <input class="form-control" type="text" id="caddress2" />
+        <input class="form-control" type="date" id="cbirth" />
+        <button class="btn btn-primary">회원가입</button>
+    
     </div>
 </body>
 

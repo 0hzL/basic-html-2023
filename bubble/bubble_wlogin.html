@@ -16,7 +16,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!--3. BootStrap Icon / font-awesome 아이콘용 CDN-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel='stylesheet' type='text/css' media='screen' href='css/bubble.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/bubble_login.css'>
     <link rel='icon' href="">
 
     <!--jQuery 추가-->
@@ -29,7 +29,6 @@
     <script src='script/bubble.js'></script>
 
 </head>
-<!-- 헤더 영역 -->
 <header>
     <!-- Navigation-->
     <nav class="navbar navbar-expand-lg bg-light text-uppercase fixed-top" id="mainNav">
@@ -49,14 +48,46 @@
         </div>
     </nav>
 </header>
-<div class="container">
-
-    <input class="form-control" type="text" id="cid" />
-    <input class="form-control" type="password" id="cpw" />
-    <button class="btn btn-primary">로그인</button>
-</div>
+    <div class="logincontainer">
+        <div class="global-cont">
+          <div class="inner-cont">
+            <div class="sign">
+              <span class="sign-in"><a href="bubble_clogin.html">일반 회원</a></span>
+              <span class="active sign-up"><a href="bubble_wlogin.html">제휴 업체</a></span>
+            </div>
+            <div class="sign-in-up">
+              <form class="sign-in-form active">
+                <input type="text" placeholder="Username or email">
+                <input type="password" placeholder="Password">
+                <span>
+                    <a href="#">Forgot ID</a>
+                </span>
+                <a href="#">Forgot Password</a>
+                <input type="button" value="Sign In">
+              </form>
+              <form class="sign-up-form">
+                <input type="text" placeholder="Email">
+                <input type="password" placeholder="Password">
+                <input type="text" placeholder="Institution/Organization">
+                
+              </form>
+              <div class="divider">
+                <span>or</span>
+              </div>
+                <div class="clearfix"></div>
+                <input type="button" value="Join Us">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 <!-- footer -->
-<footer class="footer bg-light small text-center mt-5">
-    <div class="container px-4">Copyright &copy; Single Page Website 2023.</div>
+<footer class="footer bg-light small text-center d-flex flex-column flex-md-row justify-content-md-between align-items-center ">
+  <div class="container">
+      Copyright &copy; Single Page Website 2023.<br/>
+      Copyright &copy; Single Page Website 2023.<br/>
+      Copyright &copy; Single Page Website 2023.<br/>
+      Copyright &copy; Single Page Website 2023.<br/>
+  </div>
 </footer>
 </html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>버블버물 - 회원정보 수정 </title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <!--1. BootStrap용 CSS CDM 추가-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+
+    <!-- FontAwesome 아이콘 css CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--3. BootStrap Icon / font-awesome 아이콘용 CDN-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel='stylesheet' type='text/css' media='screen' href='css/bubble_update.css'>
+    <link rel='icon' href="">
+
+    <!--jQuery 추가-->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"
+        integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <!-- font awesome 용 스크립트 CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"
+        integrity="sha512-fD9DI5bZwQxOi7MhYWnnNPlvXdp/2Pj3XSTRrFs5FQa4mizyGLnJcN6tuvUS6LbmgN1ut+XGSABKvjN0H6Aoow=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src='script/bubble.js'></script>
+
+</head>
+<!-- 헤더 영역 -->
+<header>
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg bg-light text-uppercase fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="bubble_main.html">bubble BuMUl</a>
+            <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                Menu
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="bubble_reserve.html">reservation</a></li>
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="bubble_mypage.html">mypage</a></li>
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="bubble_join.html">join</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+<body>
+    <table width="600px" name="frm" align="center">
+        <tr>
+            <td align="center">
+                
+                <table width="100%" class="table">
+                    <tr align="center">
+                        <td id="title"><h2>회원정보 수정</h2></td>
+                    </tr>
+                </table>
+                    
+                <table class="table" width="100%">
+                    <form action="update.do" method="post" name="form">
+                        <tr>
+                            <td width="35%">아이디</td>
+                            <td width="65%">세션으로 받아올 아이디값</td>
+                        </tr>			   
+                        <tr>
+                            <td width="35%">회원 이름</td>
+                            <td width="65%"><input type="text" name="cname" size="40" value="${GETMEMBER.getCo_name() }" required /></td>
+                        </tr>
+                        <tr>
+                            <td>전화번호</td>
+                            <td><input type="text" name="cphone" size="40" value="${GETMEMBER.getCo_num() }" required /></td>
+                        </tr>
+                        <tr>
+                            <td>E-mail</td>
+                            <td><input type="text" name="cemail" size="40" value="email" /></td>
+                        </tr>
+                        <tr>
+                            <td>회원 주소</td>
+                            <td id="post">
+                                <input type="text" name="cpostcode" size="10" value="우편버놓" />&nbsp;&nbsp;&nbsp;
+                                 <input type="button" value="주소변경">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td><input type="tel" name="caddress1" size="20" value="${GETMEMBER.getCo_tel() }" />
+                                <input type="tel" name="caddress2" size="12" value="${GETMEMBER.getCo_tel() }" /></td>
+                        </tr>
+                        <tr>
+                            <td>생년월일</td>
+                            <td>
+                                <input type="text" name="cbirth" size="20" value="생일나올거임" />
+                            </td>
+                        </tr>	
+                        
+                        </table>				
+                        <table>
+                        <tr>
+                            <td colspan="2" align="center">
+                                <input class="button" type="button" value="회원정보 수정" />
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <input class="button" type="button" value="비밀번호 변경" />
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <input class="button" type="button" value="탈퇴" />								
+                            </td>
+                        </tr>	
+                        </table>													
+                    </form>
+                </table>
+                
+            </td>
+        </tr>
+    </table>	
+</body>
+
+<!-- footer -->
+<footer class="footer bg-light small text-center">
+    <div class="container">
+        Copyright &copy; Single Page Website 2023.<br/>
+        Copyright &copy; Single Page Website 2023.<br/>
+        Copyright &copy; Single Page Website 2023.<br/>
+        Copyright &copy; Single Page Website 2023.<br/>
+    </div>
+</footer>
+</html>
