@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>버블리 </title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <!--1. BootStrap용 CSS CDM 추가-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+
+    <!-- FontAwesome 아이콘 css CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--3. BootStrap Icon / font-awesome 아이콘용 CDN-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel='stylesheet' type='text/css' media='screen' href='css/bubble_wlogin.css'>
+    <link rel='icon' href="">
+
+    <!--jQuery 추가-->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"
+        integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <!-- font awesome 용 스크립트 CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"
+        integrity="sha512-fD9DI5bZwQxOi7MhYWnnNPlvXdp/2Pj3XSTRrFs5FQa4mizyGLnJcN6tuvUS6LbmgN1ut+XGSABKvjN0H6Aoow=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src='script/bubble.js'></script>
+
+</head>
+<header>
+  <div id="logo">
+      <a href="bubble_main.html">
+        <img src="images/bubble_logo.png" id="logoimg">
+      </a>
+  </div>
+  <nav>
+      <ul id="topMenu">
+          <li><a href="bubble_reserve.html">예약</a></li>
+          <li><a href="bubble_mypage.html">마이 페이지</a></li>
+          <li><a href="bubble_clogin.html">로그인</a></li>
+      </ul>
+  </nav>
+</header>
+    <div class="logincontainer">
+        <div class="global-cont">
+          <div class="inner-cont">
+            <div class="sign">
+              <span class="sign-in"><a href="bubble_clogin.html">일반 회원</a></span>
+              <span class="active sign-up"><a href="bubble_wlogin.html">제휴 업체</a></span>
+            </div>
+            <div class="sign-in-up">
+              <form class="sign-in-form active">
+                <input type="text" placeholder="Insert ID">
+                <input type="password" placeholder="Insert Password">
+                <span>
+                    <a href="#">Forgot ID</a>
+                </span>
+                <a href="#">Forgot Password</a>
+                <input type="button" value="Sign In">
+              </form>
+           
+              <div class="divider">
+                <span>or</span>
+              </div>
+                <div class="clearfix"></div>
+                <input type="button" value="Join Us">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+<!-- footer -->
+<footer class="footer bg-light small text-center d-flex flex-column flex-md-row justify-content-md-between align-items-center ">
+  <div class="container">
+      Copyright &copy; Single Page Website 2023.<br/>
+      Copyright &copy; Single Page Website 2023.<br/>
+      Copyright &copy; Single Page Website 2023.<br/>
+      Copyright &copy; Single Page Website 2023.<br/>
+  </div>
+</footer>
+</html>

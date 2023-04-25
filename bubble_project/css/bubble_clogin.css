@@ -1,12 +1,12 @@
 @charset "UTF-8";
 
 /* 구글폰트로 웹사이트 폰트 바꾸기 */
-@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@200;300;400;500;600;700;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Castoro+Titling&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap');
 
 *{
     box-sizing: border-box;
-    font-family: 'Ubuntu',sans-serif;
+    font-family: 'Gowun Dodum', sans-serif;
 }
 
 
@@ -28,13 +28,17 @@ html, body{
     padding: 0px;
     margin: 0px;
 }
-
 header{
     height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
+body{
+    height: 100%;
+}
 footer {
-
     height: 250px;
     width: 100%;
     padding: 0 25px;
@@ -43,41 +47,9 @@ footer {
     border-top: 1px solid #dee5e7;
     background-color: rgba(0, 0, 0, 0.2);
     bottom: 0;
+    margin-top: auto;
   }
 
-.navigation a{
-    text-decoration: none;
-    color:white;
-    background-color:  rgba(0, 0, 0, 0.2);
-    padding: 40px 50px;
-    border-radius: 50%;
-    margin: 0 100px; 
-    font-size: calc(1.3rem + 0.9vw);
- }
- 
- .navigation a:hover{
-     background-color:white;
-     color :  rgba(0, 0, 0, 0.2);
- }
-
-.tshirt{
-    position: relative;
-    left:300px;
-    top: 150px;
-}
-
-.bb{
-    position: absolute;
-    top:300px;
-    left:700px;
-}
-
-#arrow{
-    position: absolute;
-    left:900px;
-    width: 5rem;
-   
-}
 
 
 section{
@@ -98,6 +70,89 @@ h2 {
     font-weight: 600;
     line-height: 1.2;
 }
+
+ul{
+  list-style: none;
+}
+
+
+/* header */
+header{
+    width: 100%;
+    height: 100px;
+    background-color:#dee5e7;
+  }
+  
+  #logo{
+    float: left;
+    width: 400px;
+    height: 100px;
+    line-height: 100px;
+    padding-left: 50px;
+    padding-top: 20px;
+  }
+
+  #logoimg{
+    margin-bottom: 45px;
+  }
+  
+  
+  
+  a{
+    text-decoration: none;
+  }
+  
+  #logo h2{
+    color: #363636;
+    
+  }
+  
+  ul{
+    list-style: none;
+  }
+  
+  nav{
+    float: right;
+    width: 900px;
+    height: 100px;
+    padding-top: 25px;
+  }
+  
+  #topMenu{
+    height: 60px;
+  }
+  
+  #topMenu > li{
+    float: left;
+    position: relative;
+   
+  }
+  
+  #topMenu > li > a{
+    display: block;
+    color:  rgba(78, 78, 78, 0.959);
+    font-weight: 600;
+    padding: 14px 30px 12px 30px;
+    margin-right: 60px;
+    margin-left: 60px;
+    font-family: 'Gowun Dodum', sans-serif;
+    font-size: 23px;
+  }
+  
+  #topMenu > li > a:hover{
+    color: #000;
+    background-color:  #E6F3FF;
+    /* 팔랄라보고 하기 */
+    border-radius: 30px ;
+  }
+  
+  #topMenu > li > a:focus{
+    color: #000;
+    background-color:  #E6F3FF;
+    /* 팔랄라보고 하기 */
+    border-radius: 30px ;
+    
+  }
 
 
 #text{
@@ -122,8 +177,7 @@ h2 {
     overflow: hidden;
     width: 460px;
     padding: 30px 10px 10px;
-    margin-top: 80px;
-    margin-bottom: 80px;
+
   }
 
   .global-cont {
@@ -174,30 +228,29 @@ h2 {
     padding: 25px;
     background-color:  #E6F3FF;
   }
-  .inner-cont .sign-in {
+  .inner-cont .sign-in-up form {
     overflow: hidden;
     display: none;
   }
-  .inner-cont .sign-in span,
-  .inner-cont .sign-in-up a {
+  .inner-cont .sign-in-up form > span,
+  .inner-cont .sign-in-up form > a {
     float: left;
     width: 50%;
     font-size: 12px;
   }
-
-  .inner-cont .sign-in span {
+  .inner-cont .sign-in-up form > span {
     text-align: left;
   }
 
-  .inner-cont .sign-in a {
+  .inner-cont .sign-in-up form > a {
     text-align: right;
     text-decoration: none;
     color: rgb(31, 66, 172);
   }
-  .inner-cont .sign-in a:hover {
+  .inner-cont .sign-in-up form > a:hover {
     text-decoration: underline;
   }
-  .inner-cont .sign-in input:not([type="checkbox"]) {
+  .inner-cont .sign-in-up form input:not([type="checkbox"]) {
     width: 100%;
     padding: 10px;
     margin-bottom: 10px;
@@ -205,7 +258,8 @@ h2 {
     border-radius: 5px;
     box-sizing: border-box
   }
-  .inner-cont .sign-in input[type="button"]{
+
+  .inner-cont .sign-in-up form input[type="button"]{
     margin-top: 10px;
     background-color:  rgb(31, 66, 172);
     color: #FFF;
@@ -215,17 +269,8 @@ h2 {
     transition: .3s
   }
 
-
-  .inner-cont input[type="button"] {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #C2C7D0;
-    border-radius: 5px;
-    box-sizing: border-box
-  }
   .inner-cont input[type="button"]{
-    margin-top: 2px;
+    margin-top: 10px;
     background-color:  rgb(31, 66, 172);
     color: #FFF;
     font-size: 18px;
@@ -234,7 +279,15 @@ h2 {
     transition: .3s
   }
 
-  .inner-cont .sign-in.active {
+  .inner-cont input[type="button"]{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #C2C7D0;
+    border-radius: 5px;
+    box-sizing: border-box
+  }
+  .inner-cont .sign-in-up form.active {
     display: block;
   }
 
@@ -242,7 +295,7 @@ h2 {
   /* or 부분 */
   .inner-cont .divider {
     position: relative;
-    margin-bottom: 8px;
+    margin-bottom: 15px;
   }
   .inner-cont .divider::after{
     content: "";

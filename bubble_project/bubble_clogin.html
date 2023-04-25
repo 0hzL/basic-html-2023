@@ -16,7 +16,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!--3. BootStrap Icon / font-awesome 아이콘용 CDN-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel='stylesheet' type='text/css' media='screen' href='css/bubble_login.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/bubble_clogin.css'>
     <link rel='icon' href="">
 
     <!--jQuery 추가-->
@@ -26,51 +26,41 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"
         integrity="sha512-fD9DI5bZwQxOi7MhYWnnNPlvXdp/2Pj3XSTRrFs5FQa4mizyGLnJcN6tuvUS6LbmgN1ut+XGSABKvjN0H6Aoow=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src='script/bubble.js'></script>
+    <!-- <script src='script/bubble.js'></script> -->
 
 </head>
 <header>
-    <!-- Navigation-->
-    <nav class="navbar navbar-expand-lg bg-light text-uppercase fixed-top" id="mainNav">
-        <div class="container">
-            <a class="navbar-brand" href="bubble_main.html">bubble BuMUl</a>
-            <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                Menu
-                <i class="fas fa-bars"></i>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="bubble_reserve.html">reservation</a></li>
-                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="bubble_mypage.html">mypage</a></li>
-                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="bubble_join.html">join</a></li>
-                </ul>
-            </div>
-        </div>
+    <div id="logo">
+        <a href="bubble_main.html">
+            <img src="images/bubble_logo.png" id="logoimg">
+        </a>
+    </div>
+    <nav>
+        <ul id="topMenu">
+            <li><a href="bubble_reserve.html">예약</a></li>
+            <li><a href="bubble_mypage.html">마이 페이지</a></li>
+            <li><a href="bubble_clogin.html">로그인</a></li>
+        </ul>
     </nav>
 </header>
     <div class="logincontainer">
         <div class="global-cont">
           <div class="inner-cont">
             <div class="sign">
-              <span class="sign-in"><a href="bubble_clogin.html">일반 회원</a></span>
-              <span class="active sign-up"><a href="bubble_wlogin.html">제휴 업체</a></span>
+              <span class="active sign-in"><a href="bubble_clogin.html">일반 회원</a></span>
+              <span class="sign-up"><a href="bubble_wlogin.html">제휴 업체</a></span>
             </div>
             <div class="sign-in-up">
               <form class="sign-in-form active">
-                <input type="text" placeholder="Username or email">
-                <input type="password" placeholder="Password">
+                <input type="text" placeholder="Insert ID">
+                <input type="password" placeholder="Insert Password">
                 <span>
                     <a href="#">Forgot ID</a>
                 </span>
                 <a href="#">Forgot Password</a>
-                <input type="button" value="Sign In">
+                <input type="button" value="Sign In" onclick="loginAction()">
               </form>
-              <form class="sign-up-form">
-                <input type="text" placeholder="Email">
-                <input type="password" placeholder="Password">
-                <input type="text" placeholder="Institution/Organization">
-                
-              </form>
+             
               <div class="divider">
                 <span>or</span>
               </div>
@@ -83,11 +73,36 @@
       </div>
 <!-- footer -->
 <footer class="footer bg-light small text-center d-flex flex-column flex-md-row justify-content-md-between align-items-center ">
-  <div class="container">
-      Copyright &copy; Single Page Website 2023.<br/>
-      Copyright &copy; Single Page Website 2023.<br/>
-      Copyright &copy; Single Page Website 2023.<br/>
-      Copyright &copy; Single Page Website 2023.<br/>
-  </div>
+    <div class="container">
+        Copyright &copy; Single Page Website 2023.<br/>
+        Copyright &copy; Single Page Website 2023.<br/>
+        Copyright &copy; Single Page Website 2023.<br/>
+        Copyright &copy; Single Page Website 2023.<br/>
+    </div>
 </footer>
+
+<script>
+  function loginAction() {
+      const id = document.getElementById("id");
+      const pw = document.getElementById("pw");
+      
+      // 유효성 검사
+      // 모든 항목이 입력되어 있어야함
+      if (cid.value.length <= 0) {
+         alert('아이디를 입력하세요.');
+         cid.focus();
+         return false; // 함수종료, 전송하지 않음
+      }
+      
+      if (cpw.value.length <= 0) {
+         alert('암호를 입력하세요.');
+         cpw.focus();
+         return false;
+      }
+      
+      // 전송하기
+      document.getElementById("form").submit();
+   }
+</script>
+
 </html>
