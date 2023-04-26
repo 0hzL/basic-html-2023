@@ -4,7 +4,7 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>버블리 </title>
+    <title>버블버물 업체 회원가입</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <!--1. BootStrap용 CSS CDM 추가-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -16,7 +16,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!--3. BootStrap Icon / font-awesome 아이콘용 CDN-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel='stylesheet' type='text/css' media='screen' href='css/bubble_clogin.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/bubble_wjoin.css'>
     <link rel='icon' href="">
 
     <!--jQuery 추가-->
@@ -26,7 +26,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"
         integrity="sha512-fD9DI5bZwQxOi7MhYWnnNPlvXdp/2Pj3XSTRrFs5FQa4mizyGLnJcN6tuvUS6LbmgN1ut+XGSABKvjN0H6Aoow=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <!-- <script src='script/bubble.js'></script> -->
+    <script src='script/bubble.js'></script>
 
 </head>
 <header>
@@ -43,14 +43,14 @@
           <li><a href="bubble_clogin.html">로그인</a></li>
       </ul>
   </nav>
-</header>
-<h2 class="login-title">Login</h2><hr/>
+</header>      
+<h2 class="login-title">Join Us</h2><hr/>
     <div class="logincontainer">
         <div class="global-cont">
           <div class="inner-cont">
             <div class="sign">
-              <span class="active sign-in"><a href="bubble_clogin.html">일반 회원</a></span>
-              <span class="sign-up"><a href="bubble_wlogin.html">제휴 업체</a></span>
+              <span class="sign-in"><a href="bubble_clogin.html">일반 회원</a></span>
+              <span class="active sign-up"><a href="bubble_wlogin.html">제휴 업체</a></span>
             </div>
             <div class="sign-in-up">
               <form class="sign-in-form active">
@@ -60,9 +60,9 @@
                     <a href="#">Forgot ID</a>
                 </span>
                 <a href="#">Forgot Password</a>
-                <input type="button" value="Sign In" onclick="loginAction()">
+                <input type="button" value="Sign In">
               </form>
-             
+           
               <div class="divider">
                 <span>or</span>
               </div>
@@ -82,29 +82,4 @@
       Copyright &copy; PKNU 2023 1zo<br/>
   </div>
 </footer>
-
-<script>
-  function loginAction() {
-      const id = document.getElementById("id");
-      const pw = document.getElementById("pw");
-      
-      // 유효성 검사
-      // 모든 항목이 입력되어 있어야함
-      if (cid.value.length <= 0) {
-         alert('아이디를 입력하세요.');
-         cid.focus();
-         return false; // 함수종료, 전송하지 않음
-      }
-      
-      if (cpw.value.length <= 0) {
-         alert('암호를 입력하세요.');
-         cpw.focus();
-         return false;
-      }
-      
-      // 전송하기
-      document.getElementById("form").submit();
-   }
-</script>
-
 </html>
