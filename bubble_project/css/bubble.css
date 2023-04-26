@@ -31,6 +31,10 @@ header{
   justify-content: space-between;
 }
 
+.bb h2{
+  font-family: 'Castoro Titling', cursive;
+}
+
 
 footer {
 
@@ -147,16 +151,42 @@ h2 {
     font-size: 7rem;
 }
 
+.reserve-title{
+  margin-top: 30px;
+  margin-left: 50px;
+  margin-bottom: 10px;
+}
+
+h2 {
+  margin-top: 0.3rem;
+  margin-bottom: 0.3rem;
+  font-weight: 600;
+  line-height: 1.2;
+  font-size: 35px;
+}
+
+hr{
+  margin: 1rem 0;
+  color: inherit;
+  border: 0;
+  border-top: 5px solid #8a8c8f;
+  opacity: 1;
+  margin-left: 50px;
+  margin-right: 50px;
+}
 
 .reserve{
   margin-top: 100px;
-  margin-bottom: 400px;
-    background-color: white;
+    padding-top: 100px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    background-color: white;
 }
 
+.reserveall{
+  height: 80%;
+}
 
 .reserveall h4{
   font-family: 'Gowun Dodum', sans-serif;
